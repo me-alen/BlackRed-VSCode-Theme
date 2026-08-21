@@ -165,9 +165,10 @@ Replaces the boilerplate entirely:
 
 ## 8. Marketplace scaffolding
 
-- `LICENSE` — MIT.
+- `LICENSE` — MIT, copyright Alen Francis.
 - `icon.png` — 128×128, black field with the `#E63946` accent.
-- `package.json` — `publisher`, `icon`, `license`, `repository`, `bugs`, `homepage`, `keywords`,
+- `package.json` — `author` (Alen Francis, already set), plus `publisher`, `icon`, `license`,
+  `repository`, `bugs`, `homepage`, `keywords`,
   `galleryBanner: { color: "#000000", theme: "dark" }`.
 - `@vscode/vsce` as a devDependency; `npm run package` and `npm run publish`.
 - `CHANGELOG.md` in Keep a Changelog form, with a real `0.1.0` entry replacing the placeholder.
@@ -192,8 +193,9 @@ Replaces the boilerplate entirely:
 
 ## 11. Open items
 
-- **Publisher ID.** Publishing requires a publisher tied to an Azure DevOps account.
-  `blackfly` is used as a placeholder and flagged in the README; it must be replaced before
-  the first `vsce publish`. It blocks Phase 4 only.
+- **Publisher ID.** Distinct from the author name. `author` is set to **Alen Francis**;
+  `publisher` is a Marketplace slug that must match an Azure DevOps publisher and cannot
+  contain spaces, so it needs its own value — `alenfrancis` is the obvious candidate.
+  Unset until confirmed. Blocks Phase 4 only.
 - **Screenshots.** Phase 3 needs real Extension Development Host captures, not preview renders,
   since the Marketplace listing should show actual VS Code.

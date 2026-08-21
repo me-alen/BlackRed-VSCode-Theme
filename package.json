@@ -3,6 +3,9 @@
   "displayName": "BlackRed",
   "description": "Pure Black and a tint of Red",
   "version": "0.0.1",
+  "author": {
+    "name": "Alen Francis"
+  },
   "engines": {
     "vscode": "^1.71.0"
   },
